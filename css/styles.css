@@ -58,9 +58,6 @@ a {
   font-size: 26px;
   font-weight: 700;
 }
-.main-nav-link.active-page-link {
-  color: var(--accent-color);
-}
 
 .logo-accent-color {
   color: var(--accent-color);
@@ -74,6 +71,11 @@ a {
   letter-spacing: 0.02em;
   cursor: pointer;
 }
+
+.active-page-link {
+  color: var(--accent-color);
+}
+
 .main-nav-link:hover,
 .main-nav-link:focus {
   color: var(--accent-color);
