@@ -161,8 +161,9 @@ a {
 
 .hero-section {
   background-color: var(--grey-bgc);
-}
-.wrap-hero {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   background-image: linear-gradient(
       to left,
       rgba(47, 48, 58, 0.4),
@@ -170,11 +171,8 @@ a {
     ),
     url(../images/hero-bg-opt.jpg);
   background-size: cover;
-  background-position: center;
+
   background-repeat: no-repeat;
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .hero-section .container {
@@ -577,7 +575,7 @@ icon-items-link:focus .team-icons,
   letter-spacing: 0.03em;
   background-color: #f5f4fa;
   border-radius: 4px;
-  padding: 3px 6px;
+  padding: 6px 22px;
   outline: none;
   border-width: 2px;
   border-color: transparent;
@@ -600,7 +598,7 @@ icon-items-link:focus .team-icons,
 }
 
 .filter-list .filter-list-item + .filter-list-item {
-  margin-left: 30px;
+  margin-left: 8px;
 }
 
 .project-list .container {
@@ -615,6 +613,10 @@ icon-items-link:focus .team-icons,
   margin-left: -30px;
 }
 
+.project-cards img {
+  display: block;
+  
+}
 .project-cards .items {
   flex-basis: calc(100% / 3 - 60px);
   margin-top: 30px;
@@ -656,6 +658,8 @@ icon-items-link:focus .team-icons,
 
 .card-description {
   padding: 20px 25px;
+  border: 1px solid #eeeeee;
+  border-top: none;
 }
 
 .service-card-name {
