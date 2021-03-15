@@ -66,7 +66,7 @@
       <section class="hero-section">
         <div class="container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button data-modal-open type="button" class="hero-btn">
+          <button data-modal-open type="button" class="sign-btn">
             Заказать услугу
           </button>
         </div>
@@ -476,6 +476,28 @@
             </li>
           </ul>
         </div>
+        <div class="footer-wraper">
+          <p class="invitation">Подпишитесь на рассылку</p>
+
+          <div class="signup-wrap">
+            <form name="signup_form" autocomplete="on" novalidate>
+              <label>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="E-mail"
+                  minlength="338"
+                />
+              </label>
+            </form>
+            <button type="submit" class="sign-btn">
+              Подписаться
+              <svg class="footer-icons" width="24" height="24">
+                <use href="./images/sprite.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
     </footer>
     <!-- =========modal window======== -->
@@ -487,6 +509,45 @@
             <use href="./images/sprite.svg#icon-close"></use>
           </svg>
         </button>
+
+        <div class="form-wrapper">
+          <p class="form-name">Оставьте свои данные, мы вам перезвоним</p>
+          <form class="signup_form" name="signup_form" autocomplete="on">
+            <label for="name">Имя </label
+            ><svg class="partner-logo" width="88.5px" height="45.44px">
+              <use href="./images/sprite.svg#icon-person-black"></use>
+            </svg>
+            <input type="text" name="name" id="name" />
+            <label for="phone">Телефон </label>
+            <input type="tel" name="tel" id="phone" />
+            <label>Почта </label>
+            <input type="email" name="email" />
+            <label for="message" name="comment">Комментарий </label>
+            <textarea
+              name="message"
+              id="message"
+              rows="6"
+              placeholder="Введите текст"
+            ></textarea>
+
+            <div class="agreement-group" role="group" aria-label="agre">
+              <input
+                class="agree-checkbox"
+                type="checkbox"
+                name="comment"
+                id="comment"
+              />
+
+              <p id="agre" class="agreement">
+                Соглашаюсь с рассылкой и принимаю
+                <a href="" class="agreement-link">Условия договора</a>
+              </p>
+            </div>
+            <button data-modal-open type="submit" class="sign-btn">
+              Отправить
+            </button>
+          </form>
+        </div>
       </div>
     </div>
 
