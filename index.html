@@ -75,7 +75,7 @@
       <!--=========== приимущества студии ========== -->
 
       <section class="feachers">
-        <h2 class="visually-hidden-title">Приимущества студии</h2>
+        <h2 class="visually-hidden">Приимущества студии</h2>
         <div class="container">
           <ul class="feachers-list list" lang="ru">
             <li class="items">
@@ -500,6 +500,7 @@
         </div>
       </div>
     </footer>
+
     <!-- =========modal window======== -->
 
     <div class="backdrop is-hidden" data-modal>
@@ -513,15 +514,30 @@
         <div class="form-wrapper">
           <p class="form-name">Оставьте свои данные, мы вам перезвоним</p>
           <form class="signup_form" name="signup_form" autocomplete="on">
-            <label for="name">Имя </label
-            ><svg class="partner-logo" width="88.5px" height="45.44px">
-              <use href="./images/sprite.svg#icon-person-black"></use>
-            </svg>
-            <input type="text" name="name" id="name" />
-            <label for="phone">Телефон </label>
-            <input type="tel" name="tel" id="phone" />
-            <label>Почта </label>
-            <input type="email" name="email" />
+            <label for="name">Имя</label>
+            <span class="form-field-wrapper"
+              ><input type="text" name="name" id="name" />
+              <svg class="form-icons" width="18px" height="18px">
+                <use href="./images/sprite.svg#icon-person-black"></use>
+              </svg>
+            </span>
+
+            <label for="tel">Телефон</label>
+            <span class="form-field-wrapper">
+              <input type="tel" name="tel" id="tel" />
+              <svg class="form-icons" width="18px" height="18px">
+                <use href="./images/sprite.svg#icon-phone-black"></use>
+              </svg>
+            </span>
+
+            <label for="mail"> Почта </label>
+            <span class="form-field-wrapper">
+              <input type="email" name="email" id="mail" />
+              <svg class="form-icons" width="18px" height="18px">
+                <use href="./images/sprite.svg#icon-email-black"></use>
+              </svg>
+            </span>
+
             <label for="message" name="comment">Комментарий </label>
             <textarea
               name="message"
@@ -532,20 +548,24 @@
 
             <div class="agreement-group" role="group" aria-label="agre">
               <input
-                class="agree-checkbox"
+                class="check-box visually-hidden"
                 type="checkbox"
                 name="comment"
-                id="comment"
+                id="check-box"
               />
-
-              <p id="agre" class="agreement">
-                Соглашаюсь с рассылкой и принимаю
-                <a href="" class="agreement-link">Условия договора</a>
-              </p>
+              <label for="check-box" class="agree-stroke"
+                >Соглашаюсь с рассылкой и принимаю
+                <a href="" class="agreement-link">Условия договора</a
+                ><svg class="custom-check-box" width="18px" height="18px">
+                  <use href="./images/sprite.svg#icon-check"></use>
+                </svg>
+              </label>
+              <span class="agree-checkbox"></span>
+              <!-- <svg class="custom-check-box" width="18px" height="18px">
+                <use href="./images/sprite.svg#icon-check"></use>
+              </svg> -->
             </div>
-            <button data-modal-open type="submit" class="sign-btn">
-              Отправить
-            </button>
+            <button type="submit" class="sign-btn submit-btn">Отправить</button>
           </form>
         </div>
       </div>
